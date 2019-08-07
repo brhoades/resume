@@ -5,6 +5,7 @@
 % the margin option causes section titles to appear to the left of body text
 \textwidth=5.2in          % increase textwidth to get smaller right margin
 \usepackage{hyperref}     % URL formatting
+\usepackage{fontspec}  % Enables some HTML5-like symbols within the document
 \usepackage{fontawesome}  % Enables some HTML5-like symbols within the document
 \usepackage[OT1]{fontenc} % Get us back into my regular fonts
 \usepackage{helvetica}    % uses helvetica postscript font (download helvetica.sty)
@@ -56,7 +57,17 @@
       Computer Science B.S. Spring 2016\hfill Missouri S\&T\\
     \section{Experience}
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
-         Software Engineer\hfill June 2016 -- Present
+         Team Lead | Associate Senior Software Engineer\hfill September 2018 --
+         \begin{itemize} \itemsep -1pt  % reduce space between items
+            \item Led team in fixing defects for Portal to improve client satisfaction
+            \item Managed and onboarded team of 5 engineers
+            \item Triaged and handled client escalations
+            \item Filtered and investigated incoming defects
+            \item Designed, drafted, and proposed workarounds for large client requests
+         \end{itemize}
+
+       \textbf{Cerner Corporation}\hfill Kansas City, MO\\
+         Associate Senior Software Engineer\hfill June 2016 -- September 2018
          \begin{itemize} \itemsep -1pt  % reduce space between items
             \item Developed and maintained Patient Portal, a Django web portal
             \item Designed Gatling stress tests for a Rails framework
@@ -77,16 +88,6 @@
          \item Packaged and maintained Perl scripts for installing applications
          \item Trained students on programming procedures and other required tasks
        \end{itemize}
-
-    \textbf{batee.com}\hfill  Rolla, MO\\
-       Software Development Consultant \hfill May 2015 -- July 2015\\
-       \vspace{-1em}
-       \begin{addmargin}[2.5em]{0em}
-         Developed a closed-source program in C for testing Corvette instrument panels.
-         It manually handled a serial display, adding features such as menu navigation,
-         test feedback, and clean state transition. It ran on a PIC16F1789 with 28 KB of memory,
-         2 KB of RAM, a 160x128 display, and 4 buttons.
-       \end{addmargin}
 
        \textbf{Monsanto}\hfill St. Louis, MO\\
        Service Readiness and Optimization Co-op\hfill June 2014 -- December 2014
