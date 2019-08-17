@@ -16,14 +16,6 @@
 \usepackage{silence}
 \WarningsOff*
 
-
-% Easy way to hide my phone number
-\newcommand{\phoneNumber}[0]{%
-  \href{tel:15555555555}{(555) 555-5555}%
-}
-% This is just a simple package that redefines the command above
-\usepackage{telephonenumber}
-
 % Custom color for links... should print well
 \usepackage[usenames,dvipsnames]{color}
 \definecolor{darkblue}{RGB}{0,0,102}
@@ -44,7 +36,7 @@
 
   \address{%
     \scalebox{0.86}[0.86]{\faEnvelopeAlt}\hspace{1mm}\href{mailto:billyarhoades@gmail.com}{billyarhoades@gmail.com}\\
-    \faPhoneSign\hspace{1mm}\phoneNumber
+    \faBlog\hspace{1mm}\href{https://blog.brod.es}{blog.brod.es}\\
   }
   \address{%
     \faGlobe\hspace{1mm}\href{https://brod.es/}{brod.es}\\
@@ -59,11 +51,12 @@
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
          Team Lead | Associate Senior Software Engineer\hfill September 2018 --
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Led team in fixing defects for Portal to improve client satisfaction
-            \item Managed and onboarded team of 5 engineers
-            \item Triaged and handled client escalations
-            \item Filtered and investigated incoming defects
+            \item Led team of 4-7 new engineers Patient Portal to improve client satisfaction
+            \item Triaged and handled client escalations while filtering and investigating defects
             \item Designed, drafted, and proposed workarounds for large client requests
+            \item Optimized releases: reduced artifact creation times and redundant documents
+            \item Designed and implemented passive uniqueness checks on massive Oracle table
+            \item Prototyped Python 2 to 3, Django 1 to 2 upgrade for massive Django monolith
          \end{itemize}
 
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
@@ -105,7 +98,7 @@
 
     \section{Projects}
       \begin{tabular}{l p{4in}}
-        \github\textbf{Pasty}:                & Typescript React app for sharing encrypted code snippets \\ [1pt]
+        \github\textbf{Pasty}:                & Typescript React app for sharing encrypted secrets \\ [1pt]
         \github\textbf{Grader}:               & Docker-based automated Grading of student assignments \\ [1pt]
         \github\textbf{Markovirc}:            & Markov chain IRC bot in Ruby which generates human-like text \\ [1pt]
         \github\textbf{Selenium Wrapper}:     & Python wrapper that simplifies headless website load testing \\ [1pt]
@@ -114,8 +107,8 @@
     % Tabulate Technical Skills; p{3in} defines paragraph 3 inches wide
     \section{Technical \\ Skills}
       \begin{tabular}{l p{3.6in}}
-        \textbf{Languages}:                   & Python, Ruby, JavaScript, C++, BASH \\ [1pt]
-        \textbf{Software}:                    & Django, Rails, GNU Toolchain, Linux, Git, MySQL, Nginx, PostgreSQL, RabbitMQ, Oracle \\ [1pt]
+        \textbf{Languages}:                   & Python, Ruby, NodeJS, TypeScript, C++, BASH \\ [1pt]
+        \textbf{Software}:                    & Django, Rails, GNU Toolchain, Linux, MySQL, Nginx, PostgreSQL, Oracle, RabbitMQ, Celery, Jenkins, DC/OS \\ [1pt]
       \end{tabular}
 
   \end{resume}
