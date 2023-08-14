@@ -1,3 +1,5 @@
-telephonenumber.sty
 *.pdf
 *.log
+^build
+^.direnv
+^old

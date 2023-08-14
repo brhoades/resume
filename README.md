@@ -1,8 +1,21 @@
 # Billy Rhoades' Resume
 
-This is my personal resume I've used so far--- kept up to date. You can see this resume built here:
+This repository contains the source code for my personal resume in LaTeX. You can grab a
+potentially recent render from here:
 
-http://resume.brod.es
+https://resume.brod.es
 
 # Building
-You must build this PDF with XeLaTeX or LuaLaTeX. Please also rename telephonenumber.sty.example to telephonenumber.sty and change it. This is done so that my phone number isn't publically available--- there's no technical reason.
+## Manually
+Install the fontawesome5 and silence package. Afterwards, build with XeLaTeX or LuaLaTeX.
+
+## Nix
+Using nix and direnv, you can build this resume by cloning this repository and
+running:
+
+```
+$ direnv allow
+$ make
+```
+
+The built resume will be available in build/resume.pdf.

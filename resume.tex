@@ -6,7 +6,7 @@
 \textwidth=5.2in          % increase textwidth to get smaller right margin
 \usepackage{hyperref}     % URL formatting
 \usepackage{fontspec}  % Enables some HTML5-like symbols within the document
-\usepackage{fontawesome}  % Enables some HTML5-like symbols within the document
+\usepackage{fontawesome5}  % Enables some HTML5-like symbols within the document
 \usepackage[OT1]{fontenc} % Get us back into my regular fonts
 \usepackage{helvetica}    % uses helvetica postscript font (download helvetica.sty)
 \usepackage{graphicx}
@@ -27,7 +27,7 @@
 
 \newcommand{\github}[0]%
 {%
-  \hspace{-4mm}\faGithubSign\hspace{1mm}%
+  \hspace{-4mm}\faIcon{github}\hspace{1mm}%
 }
 
 \begin{document}
@@ -35,12 +35,12 @@
   \name{Billy J. Rhoades\\[12pt]} % the \\[12pt] adds a blank line after name
 
   \address{%
-    \scalebox{0.86}[0.86]{\faEnvelopeAlt}\hspace{1mm}\href{mailto:billyarhoades@gmail.com}{billyarhoades@gmail.com}\\
-    \faBook\hspace{1mm}\href{https://blog.brod.es}{blog.brod.es}\\
+    \scalebox{0.86}[0.86]{\faIcon{envelope}}\hspace{1mm}\href{mailto:me@brod.es}{me@brod.es}\\
+    \faIcon{blog}\hspace{1mm}\href{https://blog.brod.es}{blog.brod.es}\\
   }
   \address{%
-    \faGlobe\hspace{1mm}\href{https://brod.es/}{brod.es}\\
-    \faGithubSign\hspace{1mm}\href{https://github.com/brhoades}{github.com/brhoades}\\
+    \faIcon{globe-americas}\hspace{1mm}\href{https://brod.es/}{brod.es}\\
+    \faIcon{github}\hspace{1mm}\href{https://github.com/brhoades}{github.com/brhoades}\\
     %\faDownloadAlt\hspace{1mm}\href{http://brod.es/}{brod.es}\\
   }
 
