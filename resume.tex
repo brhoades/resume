@@ -45,18 +45,37 @@
   }
 
   \begin{resume}
-    \section{Education}
-      Computer Science B.S. Spring 2016\hfill Missouri S\&T\\
     \section{Experience}
+       \textbf{ngrok}\hfill June 2023 - July 2023\\
+         Senior Software Engineer | Tech Lead\hfill October 2019 -- April 2022\\
+         \begin{itemize} \itemsep -1pt  % reduce space between items
+            \item Redesigned core logic from Redis Lua to tested Rust
+            \item Built \href{https://github.com/brhoades/redis-loadmodbytes}{custom module loading system for} injecting a Rust module into Redis
+            \item Rolled out an orchestrated HA system built around Redis Sentinel
+            \item Led and architected \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges}
+            \item Owned upgrade of only on-prem distribution used by ngrok's largest client
+            \item Diagnosed and improved performance of billion+ row Postgres DML
+         \end{itemize}
+
+       \textbf{ngrok}\hfill Seattle, WA\\
+         Engineering Manager: Network Edge\hfill April 2022 -- June 2023\\
+         \begin{itemize} \itemsep -1pt  % reduce space between items
+            \item TAM and primary point of contact for ngrok's largest client
+            \item Managed ngrok's most complicated project to date, Global Network, to launch
+            \item Led process development: a SDLC and engineering onboarding processes
+            \item Reduced deploy time of Postgres event bus service from 5 to 1.5 hours
+         \end{itemize}
+
+
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
-         Team Lead | Associate Senior Software Engineer\hfill September 2018 --
+         Senior Software Engineer -- Team Lead\hfill September 2018 - October 2019
          \begin{itemize} \itemsep -1pt  % reduce space between items
             \item Led team of 4-7 new engineers in improving Patient Portal
             \item Triaged and handled client escalations while filtering and investigating defects
-            \item Designed, drafted, and proposed workarounds for large client requests
             \item Optimized releases: reduced artifact creation times and redundant documents
             \item Designed and implemented passive uniqueness checks on massive Oracle table
             \item Prototyped Python 2 to 3, Django 1 to 2 upgrade for massive Django monolith
+            \item Designed, drafted, and proposed workarounds for large client requests
          \end{itemize}
 
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
@@ -67,48 +86,23 @@
             \item Pageletized Rails, React, and Django webpages
          \end{itemize}
 
-      \textbf{Missouri S\&T Computer Science}\hfill Rolla, MO\\
-         Grader\hfill January 2016 -- May 2016
-         \begin{itemize} \itemsep -1pt  % reduce space between items
-           \item Graded for Object Oriented Numerical Modeling, a graduate-level C++ course
-         \end{itemize}
-
-       \textbf{Missouri S\&T IT Desktop Infrastructure}\hfill May 2013 -- June 2014\\
-       Student Lead\hfill December 2014 -- November 2015
-       \begin{itemize} \itemsep -1pt  % reduce space between items
-         \item Moved all package creation to version control with Git
-         \item Packaged and maintained Perl scripts for installing applications
-         \item Trained students on programming procedures and other required tasks
-       \end{itemize}
-
-       \textbf{Monsanto}\hfill St. Louis, MO\\
-       Service Readiness and Optimization Co-op\hfill June 2014 -- December 2014
-       \begin{itemize} \itemsep -1pt  % reduce space between items
-         \item Developed a wrapper for performance testing internal sites with Selenium
-         \item Collaborated with a hackathon team to make a web-based idea board
-       \end{itemize}
-
-       \textbf{Missouri S\&T IT Help Desk}\hfill Rolla, MO\\
-       Student Support Analyst\hfill February 2011 -- June 2014
-       \begin{itemize} \itemsep -1pt  % reduce space between items
-         \item Responsible for coordinating and scheduling appointments with customers
-         \item Tasked with assisting staff and faculty remotely and in person
-       \end{itemize}
-
     \section{Projects}
       \begin{tabular}{l p{4in}}
-        \github\textbf{Pasty}:                & Typescript React app for sharing encrypted secrets \\ [1pt]
-        \github\textbf{Grader}:               & Docker-based automated Grading of student assignments \\ [1pt]
-        \github\textbf{Markovirc}:            & Markov chain IRC bot in Ruby which generates human-like text \\ [1pt]
-        \github\textbf{Selenium Wrapper}:     & Python wrapper that simplifies headless website load testing \\ [1pt]
+        \href{https://github.com/brhoades/redis-loadmodbytes}{\github}\textbf{redis-loadmodbytes}:  & Redis module for injecting libraries over the wire \\ [1pt]
+        \href{https://github.com/brhoades/dlux}{\github}\textbf{dlux}:                              & Tiny Rust daemon for controlling monitor hardware brightness \\ [1pt]
+        \href{https://github.com/redkyn/grader}{\github}\textbf{Grader}:                            & Docker-based automated Grading of student assignments \\ [1pt]
+        \href{https://github.com/linuxmercedes/markovirc}{\github}\textbf{Markovirc}:               & Markov chain IRC bot in Ruby which generates human-like text \\ [1pt]
       \end{tabular}
 
     % Tabulate Technical Skills; p{3in} defines paragraph 3 inches wide
     \section{Technical \\ Skills}
       \begin{tabular}{l p{3.6in}}
-        \textbf{Languages}:                   & Python, Ruby, NodeJS, TypeScript, C++, BASH \\ [1pt]
-        \textbf{Software}:                    & Django, Rails, GNU Toolchain, Linux, MySQL, Nginx, PostgreSQL, Oracle, RabbitMQ, Celery, Jenkins, DC/OS \\ [1pt]
+        \textbf{Languages}:                   & Rust, Golang, Python, TypeScript, Nix, C++, BASH \\ [1pt]
+        \textbf{Software}:                    & Kubernetes, gRPC, Protobuf, Redis, Rails, Django, GNU Toolchain, Linux, PostgreSQL \\ [1pt]
       \end{tabular}
+    \section{Education}
+    \textbf{Computer Science B.S.}\hfill Spring 2016 \\ [1pt]
+    Missouri University of Science and Technology
 
   \end{resume}
 
