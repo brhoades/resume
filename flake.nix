@@ -19,7 +19,9 @@
             buildInputs = [
               tex
               font-awesome_5
+
               awscli
+              jq
             ];
           };
         });
