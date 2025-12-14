@@ -46,53 +46,49 @@
 
   \begin{resume}
     \section{Experience}
-       \textbf{ngrok}\hfill June 2023 - July 2023\\
-         Senior Software Engineer | Tech Lead\hfill October 2019 -- April 2022\\
+       \textbf{Rippling}\hfill Remote\\
+         Staff Software Engineer\hfill Oct 2023 -- Present\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Redesigned core logic from Redis Lua to tested Rust
-            \item Built \href{https://github.com/brhoades/redis-loadmodbytes}{custom module loading system for} injecting a Rust module into Redis
-            \item Developed an orchestrated HA system built around Redis Sentinel
-            \item Led and architected \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges}
-            \item Owned upgrade of years old on-prem distribution used by ngrok's largest client
-            \item Diagnosed and improved performance of billion+ row Postgres DML
-            \item Modernized and improved ngrok's automated abuse handling
+            \item Tech led client software team, 10 programs across MacOS and Windows
+            \item Solved multi-month incident pattern: 2k req/s blocking API calls, saved \$10k+/mo
+            \item Brought agent uptime from 90\% to 99\% MacOS, 50\% to 96\% Windows
+            \item Shipped new orchestrator replacing fundamentally broken sqlite system
+            \item Cut weekly incidents to bimonthly via phased rollouts and CI smoke tests
+            \item Drove reorg from vertical products to horizontal platforms
+            \item Guided technical direction for org of 35 engineers managing 100k+ device fleet
          \end{itemize}
 
        \textbf{ngrok}\hfill Seattle, WA\\
-         Engineering Manager: Network Edge\hfill April 2022 -- June 2023\\
+         Senior Software Engineer \textbar \ Tech Lead\hfill Oct 2019 -- Apr 2022, Jun 2023 -- Aug 2023\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item TAM and primary point of contact for ngrok's largest client
-            \item Managed ngrok's most complicated project to date, Global Network, to launch
-            \item Led process development: a SDLC and engineering onboarding processes
-            \item Reduced deploy time of Postgres event bus service from 5 to 1.5 hours
+            \item Built \href{https://github.com/brhoades/redis-loadmodbytes}{ill-advised Redis module} in hackathon; ran in prod 3+ years
+            \item Transformed tunnels from immutable to dynamic via config re-resolution
+            \item Brought tunnels from basic auth to federated identity: OAuth, SAML, OIDC
+            \item Led \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges}
+            \item Solo migrated largest, on-prem customer through 2 years of changes
+            \item Debugged query planner failures on billion-row table; fixed via RDS tuning
+            \item Hackathon: production K8s per PR in CI requiring e2e test pass
          \end{itemize}
 
+       \textbf{ngrok}\hfill Seattle, WA\\
+         Engineering Manager \textbar \ Network Edge\hfill Apr 2022 -- Jun 2023\\
+         \begin{itemize} \itemsep -1pt  % reduce space between items
+            \item Managed on-prem client relationship through contract resign
+            \item Led process creation: SDLC, per-team oncall, postmortems, onboarding
+            \item Shipped years-long \href{https://ngrok.com/blog/gslb-global-server-load-balancing}{GSLB project} eliminating regional boundaries
+            \item Cut pgreplica deploy times from 5 to 1.5 hours
+         \end{itemize}
 
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
-         Senior Software Engineer -- Team Lead\hfill September 2018 - October 2019
-         \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Led team of 4-7 new engineers in improving Patient Portal
-            \item Triaged and handled client escalations while filtering and investigating defects
-            \item Optimized releases: reduced artifact creation times and redundant documents
-            \item Designed and implemented passive uniqueness checks on massive Oracle table
-            \item Prototyped Python 2 to 3, Django 1 to 2 upgrade for massive Django monolith
-            \item Designed, drafted, and proposed workarounds for large client requests
-         \end{itemize}
-
-       \textbf{Cerner Corporation}\hfill Kansas City, MO\\
-         Associate Senior Software Engineer\hfill June 2016 -- September 2018
-         \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Developed and maintained Patient Portal, a Django web portal
-            \item Designed Gatling stress tests for a Rails framework
-            \item Pageletized Rails, React, and Django webpages
-         \end{itemize}
+         Senior Software Engineer \textbar \ Team Lead\hfill Sept 2018 -- Oct 2019 \\
+         Associate Senior Software Engineer\hfill June 2016 -- Sept 2018 \\
 
     \section{Projects}
       \begin{tabular}{l p{4in}}
-        \href{https://github.com/brhoades/redis-loadmodbytes}{\github}\textbf{redis-loadmodbytes}:  & Redis module for injecting libraries over the wire \\ [1pt]
+        \href{https://github.com/Rippling/suspend-time}{\github}\textbf{suspend-time}:              & Cross-platform crate that enables ignoring time spent sleeping \\ [1pt]
+        \href{https://github.com/brhoades/adaptive-backoff}{\github}\textbf{adaptive\_backoff}:     & Adaptive exponential backoff Rust crate, 300k+ downloads \\ [1pt]
+        \href{https://github.com/brhoades/httpot}{\github}\textbf{httpot}:                          & HTTP honeypot with infinite fake directories to trap crawlers \\ [1pt]
         \href{https://github.com/brhoades/dlux}{\github}\textbf{dlux}:                              & Tiny Rust daemon for controlling monitor hardware brightness \\ [1pt]
-        \href{https://github.com/redkyn/grader}{\github}\textbf{Grader}:                            & Docker-based automated Grading of student assignments \\ [1pt]
-        \href{https://github.com/linuxmercedes/markovirc}{\github}\textbf{Markovirc}:               & Markov chain IRC bot in Ruby which generates human-like text \\ [1pt]
       \end{tabular}
 
     % Tabulate Technical Skills; p{3in} defines paragraph 3 inches wide
