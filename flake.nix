@@ -22,6 +22,7 @@
 
               awscli
               jq
+              inotify-tools
             ];
           };
         });
