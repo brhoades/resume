@@ -47,36 +47,36 @@
   \begin{resume}
     \section{Experience}
        \textbf{Rippling}\hfill Remote\\
-         Staff Software Engineer\hfill Oct 2023 -- Present\\
+         Staff Software Engineer \textbar \ Devices\hfill Oct 2023 -- Present\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Tech led client software team, 10 programs across MacOS and Windows
-            \item Solved multi-month incident pattern: 2k req/s blocking API calls, saved \$10k+/mo
-            \item Brought agent uptime from 90\% to 99\% MacOS, 50\% to 96\% Windows
-            \item Shipped new orchestrator replacing fundamentally broken sqlite system
-            \item Cut weekly incidents to bimonthly via phased rollouts and CI smoke tests
-            \item Drove reorg from vertical products to horizontal platforms
             \item Guided technical direction for org of 35 engineers managing 100k+ device fleet
+            \item Tech led client software team, 10 programs across MacOS and Windows
+            \item Brought Rust agent uptime from 90\% to 99\% MacOS, 50\% to 96\% Windows
+            \item Shipped new event orchestrator replacing fundamentally broken sqlite version
+            \item Cut weekly incidents to bimonthly via phased rollouts and CI smoke tests
+            \item Solved multi-month incident pattern: 2k req/s blocking API calls, saved \$10k+/mo
+            \item Drove reorg from vertical product teams to horizontal platform teams
          \end{itemize}
 
        \textbf{ngrok}\hfill Seattle, WA\\
          Senior Software Engineer \textbar \ Tech Lead\hfill Oct 2019 -- Apr 2022, Jun 2023 -- Aug 2023\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Built \href{https://github.com/brhoades/redis-loadmodbytes}{ill-advised Redis module} in hackathon; ran in prod 3+ years
-            \item Transformed tunnels from immutable to dynamic via config re-resolution
+            \item Built a \href{https://github.com/brhoades/redis-loadmodbytes}{ill-advised Redis module} in hackathon; ran in prod 3+ years
+            \item Transformed tunnels from immutable to dynamically updated via config re-resolution
             \item Brought tunnels from basic auth to federated identity: OAuth, SAML, OIDC
-            \item Led \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges}
+            \item Led \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges} to launch
             \item Solo migrated largest, on-prem customer through 2 years of changes
             \item Debugged query planner failures on billion-row table; fixed via RDS tuning
-            \item Hackathon: production K8s per PR in CI requiring e2e test pass
+            \item Hackathon: added prod-like K8s in CI for PRs requiring full e2e test pass
          \end{itemize}
 
        \textbf{ngrok}\hfill Seattle, WA\\
          Engineering Manager \textbar \ Network Edge\hfill Apr 2022 -- Jun 2023\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Managed on-prem client relationship through contract resign
+            \item Managed major on-prem client relationship through contract renewal
             \item Led process creation: SDLC, per-team oncall, postmortems, onboarding
             \item Shipped years-long \href{https://ngrok.com/blog/gslb-global-server-load-balancing}{GSLB project} eliminating regional boundaries
-            \item Cut pgreplica deploy times from 5 to 1.5 hours
+            \item Cut key event bus service deploy times from 5 to 1.5 hours (10's hrs/wk saved)
          \end{itemize}
 
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
@@ -85,17 +85,18 @@
 
     \section{Projects}
       \begin{tabular}{l p{4in}}
-        \href{https://github.com/Rippling/suspend-time}{\github}\textbf{suspend-time}:              & Cross-platform crate that enables ignoring time spent sleeping \\ [1pt]
         \href{https://github.com/brhoades/adaptive-backoff}{\github}\textbf{adaptive\_backoff}:     & Adaptive exponential backoff Rust crate, 300k+ downloads \\ [1pt]
+        \href{https://github.com/Rippling/suspend-time}{\github}\textbf{suspend-time}:              & Cross-platform crate to track time, excluding system sleeps \\ [1pt]
         \href{https://github.com/brhoades/httpot}{\github}\textbf{httpot}:                          & HTTP honeypot with infinite fake directories to trap crawlers \\ [1pt]
         \href{https://github.com/brhoades/dlux}{\github}\textbf{dlux}:                              & Tiny Rust daemon for controlling monitor hardware brightness \\ [1pt]
       \end{tabular}
 
     % Tabulate Technical Skills; p{3in} defines paragraph 3 inches wide
-    \section{Technical \\ Skills}
+    \section{Tech}
       \begin{tabular}{l p{3.6in}}
-        \textbf{Languages}:                   & Rust, Golang, Python, TypeScript, Nix, C++, BASH \\ [1pt]
-        \textbf{Software}:                    & Kubernetes, gRPC, Protobuf, Redis, Rails, Django, GNU Toolchain, Linux, PostgreSQL \\ [1pt]
+        \textbf{Languages}:                   & Rust, Golang, Nix, C++, Python, \LaTeX, Bash \\ [1pt]
+        \textbf{Platform/Infra}:              & Linux, Arcane Windows APIs, Kubernetes, Redis \\ [1pt]
+                                              & MongoDB, PostgreSQL, gRPC, GNU Toolchain \\ [1pt]
       \end{tabular}
     \section{Education}
     \textbf{Computer Science B.S.}\hfill Spring 2016 \\ [1pt]
