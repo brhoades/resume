@@ -1,8 +1,12 @@
-default: build/resume.pdf
+default: build/resume.pdf build/cv.pdf
 
-build/resume.pdf: $(wildcard *.tex)
+build/resume.pdf: resume.tex res.cls
 	echo 'S' | xelatex resume.tex -interaction=batchmode
 	mv resume.pdf build/
+
+build/cv.pdf: cv.tex res.cls
+	echo 'S' | xelatex cv.tex -interaction=batchmode
+	mv cv.pdf build/
 
 upload: default
 	aws s3 sync build/ s3://resume.brod.es/

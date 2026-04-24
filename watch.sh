@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-inotifywait -q -m -e close_write --format %e resume.tex |
+inotifywait -q -m -e close_write --format %e resume.tex cv.tex |
 while read events; do
   make
 done
