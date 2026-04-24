@@ -40,18 +40,28 @@
   \address{%
     \faIcon{globe-americas}\hspace{1mm}\href{https://brod.es/}{brod.es}\\
     \faIcon{github}\hspace{1mm}\href{https://github.com/brhoades}{github.com/brhoades}\\
-    %\faDownloadAlt\hspace{1mm}\href{http://brod.es/}{brod.es}\\
   }
 
   \begin{resume}
     \section{Experience}
+       \textbf{Stealth Startup}\hfill Remote\\
+         Software Consultant \hfill Jan 2026 -- Mar 2026\\
+         \\
+         I developed the next generation market feed ingest system. It was a multi platform, WebSocket-streamed, Rust microservice system
+         on EKS that achieved high availability through redundant streams and sharded ticker distribution.
+
+
        \textbf{Rippling}\hfill Remote\\
          Staff Software Engineer \textbar \ Devices\hfill Oct 2023 -- Jan 2026\\
+         \\
+         I was Staff Engineer at large for Devices, roughly four teams and 30 people.
+         Our scrappy Inventory and Device Management product supported 200k devices, but was built for 20k (on a good week).
+         I leveled-up the org, bringing a vision and technical rigor that had been absent.
+         My major focus was the Rust-heavy Client software team as the first Rustacean hired. \\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Guided technical direction for org of 35 engineers managing 100k+ device fleet
-            \item Tech led client software team, 10 programs across MacOS and Windows
             \item Brought Rust agent uptime from 90\% to 99\% MacOS, 50\% to 96\% Windows
-            \item Shipped new event orchestrator replacing fundamentally broken sqlite version
+            \item Reduced client software incidents from weekly to less than quarterly
+            \item Designed, shipped, and migrated events to a new device-side event orchestrator
             \item Cut weekly incidents to bimonthly via phased rollouts and CI smoke tests
             \item Solved multi-month incident pattern: 2k req/s blocking API calls, saved \$10k+/mo
             \item Drove reorg from vertical product teams to horizontal platform teams
@@ -59,20 +69,23 @@
 
        \textbf{ngrok}\hfill Seattle, WA\\
          Senior Software Engineer \textbar \ Tech Lead\hfill Oct 2019 -- Apr 2022, Jun 2023 -- Aug 2023\\
+         \\
+         I was employee \#9 at the ingress as a service company best known for its CLI tunneling tool.
+         As ngrok's second tech lead, I had significant impact and influence before ultimately leading (and later managing) the Network Edge team.
+         In Golang and Rust, we built out application features on ngrok's HTTP, TLS, and TCP tunnels such as federated auth (OAuth, OIDC, SAML), compression, IP restrictions, load balancing, and more. \\
          \begin{itemize} \itemsep -1pt  % reduce space between items
             \item Built a \href{https://github.com/brhoades/redis-loadmodbytes}{ill-advised Redis module} in hackathon; ran in prod 3+ years
             \item Transformed tunnels from immutable to dynamically updated via config re-resolution
-            \item Brought tunnels from basic auth to federated identity: OAuth, SAML, OIDC
+            \item Architected and led federated identity for tunnels: OAuth, SAML, OIDC
             \item Led \href{https://ngrok.com/next-generation}{ngrok's next generation platform, Cloud Edges} to launch
-            \item Solo migrated largest, on-prem customer through 2 years of changes
-            \item Debugged query planner failures on billion-row table; fixed via RDS tuning
-            \item Hackathon: added prod-like K8s in CI for PRs requiring full e2e test pass
+            \item Debugged Postgres query planner failures on billion-row table; fixed via tuning
+            \item Hackathon: added prod-like K8s cluster in CI for PRs requiring full e2e test pass
          \end{itemize}
 
        \textbf{ngrok}\hfill Seattle, WA\\
          Engineering Manager \textbar \ Network Edge\hfill Apr 2022 -- Jun 2023\\
          \begin{itemize} \itemsep -1pt  % reduce space between items
-            \item Managed major on-prem client relationship through contract renewal
+            \item Managed major on-prem client relationship through contract renewal (10\%+ ARR)
             \item Led process creation: SDLC, per-team oncall, postmortems, onboarding
             \item Shipped years-long \href{https://ngrok.com/blog/gslb-global-server-load-balancing}{GSLB project} eliminating regional boundaries
             \item Cut key event bus service deploy times from 5 to 1.5 hours (10's hrs/wk saved)
@@ -81,6 +94,32 @@
        \textbf{Cerner Corporation}\hfill Kansas City, MO\\
          Senior Software Engineer \textbar \ Team Lead\hfill Sept 2018 -- Oct 2019 \\
          Associate Senior Software Engineer\hfill June 2016 -- Sept 2018 \\
+         \\
+         I owned a neglected Django monolith, Patient Portal, and tried to keep it afloat. We survived several incidents, major product pushes,
+         DoD, and VA audits. At the end of my tenure, I was a tech lead manager for 7 fresh graduates. \\
+
+         \begin{itemize} \itemsep -1pt  % reduce space between items
+           \item Improved releases from 7 workplans and 2 hrs of CI jobs to 2 plans and 15 mins
+           \item Developed pageletized (iframe-embeddable) versions of Patient Portal flows
+           \item Built out the containerized Patient Portal in EC2 using Packer and Chef
+           \item Prototyped massive Python 2.7\textrightarrow 3.4 and Django 1.7\textrightarrow 2.0 conversion
+         \end{itemize}
+
+    \textbf{Missouri S\&T}\hfill Rolla, MO\\
+      CS Grader and TA\hfill Aug 2015 -- May 2016\\
+      Student Lead \textbar \ Desktop Infrastructure\hfill Dec 2014 - Nov 2015\\
+      Desktop Engineer \textbar \ Desktop Infrastructure\hfill May 2013 - Jun 2014\\
+      Student Lead \textbar \ IT Help Desk\hfill Feb 2011 - May 2013\\
+
+    \textbf{batee.com}\hfill Rolla, MO\\
+      Software Consultant \hfill May 2015 - July 2015\\
+      \\
+      Developed a proprietary C program for testing Corvette instrument panels. Ran on a PIC16F1789 with embedded display and four buttons.\\
+
+    \textbf{Bayer}\hfill St. Louis, MO\\
+      Service Performance and Reliability Co-op\hfill Jun 2014 - Dec 2014\\
+
+
 
     \section{Projects}
       \begin{tabular}{l p{4in}}
